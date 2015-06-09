@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title>Track | {{.data.title}}</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='/public/css/lato.css' rel='stylesheet' type='text/css'>
+    <link href='/public/css/montserrat.css' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/public/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="/public/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/public/plugins/prism/prism.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="/public/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/public/js/html5shiv.js"></script>
+    <script src="/public/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll">
+
+<!---//Facebook button code-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- ******HEADER****** -->
+<header id="header" class="header">
+    <div class="container">
+        <h1 class="logo pull-left">
+            <a class="scrollto" href="#promo">
+                <span class="logo-title">Track</span>
+            </a>
+        </h1><!--//logo-->
+        <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--//nav-toggle-->
+            </div><!--//navbar-header-->
+            <div class="navbar-collapse collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active nav-item sr-only"><a class="scrollto" href="#promo">首页</a></li>
+                    <li class="nav-item"><a class="scrollto" href="#about">关于</a></li>
+                    <li class="nav-item"><a class="scrollto" href="#features">截图</a></li>
+                    <li class="nav-item"><a class="scrollto" href="#docs">APP</a></li>
+                    <li class="nav-item"><a class="scrollto" href="#license">开源</a></li>
+                    <li class="nav-item last"><a class="scrollto" href="#contact">联系</a></li>
+                </ul><!--//nav-->
+            </div><!--//navabr-collapse-->
+        </nav><!--//main-nav-->
+    </div>
+</header><!--//header-->
+
+<!-- ******PROMO****** -->
+<section id="promo" class="promo section offset-header">
+    <div class="container text-center">
+        <h2 class="title">T<span class="highlight">rack</span></h2>
+        <p class="intro">{{.data.title}}</p>
+        <div class="btns">
+            <a class="btn btn-cta-secondary" href="" target="_blank">登录</a>
+            <a class="btn btn-cta-primary" href="" target="_blank">注册</a>
+        </div>
+        <div class="meta list-inline">
+        </div><!--//meta-->
+    </div><!--//container-->
+</section><!--//promo-->
+
+<!-- ******ABOUT****** -->
+<section id="about" class="about section">
+    <div class="container">
+        <h2 class="title text-center">Track是什么？</h2>
+        <p class="intro text-center"></p>
+        <div class="row">
+            <div class="item col-md-4 col-sm-6 col-xs-12">
+                <div class="icon-holder">
+                    <i class="fa fa-heart"></i>
+                </div>
+                <div class="content">
+                    <h3 class="sub-title">手头工作随时查看</h3>
+                    <p>及时关注手头工作，随时查看当前未完成的工作，避免忘记关键工作。</p>
+                </div><!--//content-->
+            </div><!--//item-->
+            <div class="item col-md-4 col-sm-6 col-xs-12">
+                <div class="icon-holder">
+                    <i class="fa fa-clock-o"></i>
+                </div>
+                <div class="content">
+                    <h3 class="sub-title">安排出去的工作随时跟踪</h3>
+                    <p>随时查看已经安排出去的工作的进展情况，避免某个工作延迟影响整体进展。</p>
+                </div><!--//content-->
+            </div><!--//item-->
+            <div class="item col-md-4 col-sm-6 col-xs-12">
+                <div class="icon-holder">
+                    <i class="fa fa-tablet"></i>
+                </div>
+                <div class="content">
+                    <h3 class="sub-title">支持手机/PC多终端使用</h3>
+                    <p>支持安卓、苹果手机，支持windows、linux、MAC操作系统</p>
+                </div><!--//content-->
+            </div><!--//item-->
+            <div class="clearfix visible-md"></div>
+            <div class="item col-md-4 col-sm-6 col-xs-12">
+                <div class="icon-holder">
+                    <i class="fa fa-crosshairs"></i>
+                </div>
+                <div class="content">
+                    <h3 class="sub-title">以用户为中心</h3>
+                    <p>简洁、易上手，拒绝花里呼哨，所有工作一目了然</p>
+                </div><!--//content-->
+            </div><!--//item-->
+            <div class="item col-md-4 col-sm-6 col-xs-12">
+                <div class="icon-holder">
+                    <i class="fa fa-code"></i>
+                </div>
+                <div class="content">
+                    <h3 class="sub-title">免费且安全</h3>
+                    <p>所有功能免费使用，服务部署在阿里云上，所有数据定时备份，安全无忧</p>
+                </div><!--//content-->
+            </div><!--//item-->
+            <div class="item col-md-4 col-sm-6 col-xs-12">
+                <div class="icon-holder">
+                    <i class="fa fa-coffee"></i>
+                </div>
+                <div class="content">
+                    <h3 class="sub-title">开源</h3>
+                    <p>下载源码，自己部署，商业数据自由掌控,方便迁移</p>
+                </div><!--//content-->
+            </div><!--//item-->
+        </div><!--//row-->
+    </div><!--//container-->
+</section><!--//about-->
+
+<!-- ******FEATURES****** -->
+<section id="features" class="features section">
+    <div class="container text-center">
+        <h2 class="title">截图</h2>
+        <ul class="feature-list list-unstyled">
+            <li><i class="fa fa-check"></i> 简洁、友好，易于上手</li>
+            <li><i class="fa fa-check"></i> 多终端支持、随时随地跟踪工作进度</li>
+            <li><i class="fa fa-check"></i> 做一个slide</li>
+            <li><i class="fa fa-check"></i> 400+ FontAwesome icons</li>
+            <li><i class="fa fa-check"></i> 4 colour schemes</li>
+            <li><i class="fa fa-check"></i> LESS files included</li>
+            <li><i class="fa fa-check"></i> Compatible with all modern browsers</li>
+            <li><i class="fa fa-check"></i> 4 colour schemes</li>
+            <li><i class="fa fa-check"></i> LESS files included</li>
+            <li><i class="fa fa-check"></i> Compatible with all modern browsers</li>
+        </ul>
+    </div><!--//container-->
+</section><!--//features-->
+
+<!-- ******DOCS****** -->
+<section id="docs" class="docs section">
+    <div class="container">
+        <div class="docs-inner">
+            <h2 class="title text-center">APP</h2>
+            <div class="row">
+                <div class="item col-md-6 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <h3 class="sub-title">安卓</h3>
+                        <p><img src="/public/img/app_android.jpg"></p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-6 col-sm-6 col-xs-12">
+                    <div class="content">
+                        <h3 class="sub-title">IOS</h3>
+                        <p><img src="/public/img/app_android.jpg"></p>
+                    </div><!--//content-->
+                </div><!--//item-->
+            </div><!--//row-->
+        </div><!--//docs-inner-->
+    </div><!--//container-->
+</section><!--//features-->
+
+<!-- ******LICENSE****** -->
+<section id="license" class="license section">
+    <div class="container">
+        <div class="license-inner">
+            <h2 class="title text-center">开源</h2>
+            <div class="info">
+                <p>Track所有源码托管在github上，地址：<a href="https://github.com/baiyuxiong/track" target="_blank">https://github.com/baiyuxiong/track</a>，使用<a href="https://github.com/baiyuxiong/track/blob/master/LICENSE" target="_blank">GPL授权</a>。</p>
+                <p>您可以下行下载安装部署或者加入QQ群：123456，交流使用经验。</p><br/><br/>
+                <p>后端使用go语言revel框架编写</p>
+                <p>APP使用ionic框架</p>
+                <p>Web页面基于AngularJS构建</p>
+            </div><!--//info-->
+        </div><!--//license-inner-->
+    </div><!--//container-->
+</section><!--//how-->
+
+<!-- ******CONTACT****** -->
+<section id="contact" class="contact section has-pattern">
+    <div class="container">
+        <div class="contact-inner">
+            <h2 class="title  text-center">联系</h2>
+            <p class="intro  text-center">希望您喜欢Track<br />如果您有任何意见、建议，欢迎联系我</p>
+            <div class="author-message">
+                <div class="profile">
+                    <img class="img-responsive" src="/public/img/profile.png" alt="" />
+                </div><!--//profile-->
+                <div class="speech-bubble">
+                    <h3 class="sub-title">联系方式</h3>
+                    <p>西安一元科技有限公司</p>
+                    <p>QQ:549041410</p>
+                    <p>邮箱：i@track.pub</p>
+                    <p>地址：陕西省西安市雁塔区</p>
+                    <div class="source">
+                        <span class="name">Thanks</span>
+                        <br />
+                        <span class="title">The Track Team</span>
+                    </div><!--//source-->
+                </div><!--//speech-bubble-->
+            </div><!--//author-message-->
+        </div><!--//contact-inner-->
+    </div><!--//container-->
+</section><!--//contact-->
+
+<!-- ******FOOTER****** -->
+<footer class="footer">
+    <div class="container text-center">
+        <small class="copyright">2015&copy;西安一元科技有限公司 版权所有</small>
+    </div><!--//container-->
+</footer><!--//footer-->
+
+<!-- Javascript -->
+<script type="text/javascript" src="/public/plugins/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/public/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/public/plugins/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/public/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/public/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="/public/plugins/prism/prism.js"></script>
+<script type="text/javascript" src="/public/js/home-main.js"></script>
+</body>
+</html>
